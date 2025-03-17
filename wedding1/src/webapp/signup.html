@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="styles/auth.css" rel="Stylesheet"/>
+    <script defer src="scripts/script.js"></script>
+    <script src="scripts/reverseAuth.js"></script>
+</head>
+<body>
+<div class="auth-container">
+    <h2>Create an Account</h2>
+    <div class="role-selector">
+        <button class="role-btn active" data-role="customer">Customer</button>
+        <button class="role-btn" data-role="vendor">Vendor</button>
+    </div>
+    <form id="login-form" style="display:none"></form>
+    <form id="register-form">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" required>
+        </div>
+
+        <div class="form-group vendor-field" style="display: none;">
+            <label for="company">Company Name</label>
+            <input type="text" id="company">
+        </div>
+        <div class="form-group vendor-field" style="display: none;">
+            <label for="location">Location</label>
+            <input type="text" id="location">
+        </div>
+
+        <div id="signupMessage"></div>
+        <button type="submit" class="btn primary-btn">Register</button>
+    </form>
+    <p class="auth-switch">Already have an account? <a href="login.html" id="switch-to-login">Login</a></p>
+</div>
+
+</body>
+</html>
